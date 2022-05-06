@@ -2,7 +2,7 @@ def createMatrix(n):
     matrix = [[0 for x in range(n)] for x in range(n)]
     return matrix
 
-def magicSquare():
+def oddMagicSquare():
     
     order = int(input("Enter the order of Magic Square matrix: "))
     
@@ -10,6 +10,8 @@ def magicSquare():
         print("Sorry! Wrong input provided. Try again")
     elif(order==1):
         print("Magic Number for this matrix is 1.")
+    elif(order%3 !=0):
+        print("Please enter odd number - to get ODD Order Magic Square")
     else:
         matrix = createMatrix(order)
         n = order
