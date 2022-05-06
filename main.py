@@ -28,7 +28,7 @@ def oddMagicSquare():
                 
                 if(col == n):
                     col = 0
-            print(matrix[row][col], end= " ")        
+            # print(matrix[row][col], end= " ")        
             if(matrix[row][col] != 0):
                 row = row+1
                 col = col-2
@@ -44,4 +44,4 @@ def oddMagicSquare():
                 print(matrix[row][col], end = " ")
             print()
         
-magicSquare()
+oddMagicSquare()
