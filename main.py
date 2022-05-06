@@ -4,11 +4,11 @@ def createMatrix(n):
 
 def oddMagicSquare():
     
-    order = int(input("Enter the order of Magic Square matrix: "))
+    order = abs(int(input("Enter the order of Magic Square matrix: ")))
     
-    if(order<0):
-        print("Sorry! Wrong input provided. Try again")
-    elif(order==1):
+    # if(order<0):
+    #     print("Sorry! Wrong input provided. Try again")
+    if(order==1):
         print("Magic Number for this matrix is 1.")
     elif(order%3 !=0):
         print("Please enter odd number - to get ODD Order Magic Square")
